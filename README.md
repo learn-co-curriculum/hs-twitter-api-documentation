@@ -59,7 +59,7 @@ In the above code, we're setting up a variable `client`. This variable is storin
 ###Calling the API
 Here are examples of how you can use the Twitter gem.
 
-####Getting all the tweets from a specific user
+####Get all the tweets from a specific user
 
 ```ruby
   client.user_timeline("vicfriedman")
@@ -70,7 +70,13 @@ Above are two different examples of how to retrieve a specific user's tweets. Th
 
 We call the `user_timeline` method, which is a method define in the Twitter gem. This method can accept an argument in two different forms: a twitter handle as a string or the user's unique id number as an integer.
 
-####Getting all of the tweets where you (the authenticated user) are mentioned
+####Fetch the timeline of Tweets from the home page of the authenticated user (that's you!)
+
+```ruby
+client.home_timeline
+```
+
+####Get all of the tweets where you (the authenticated user) are mentioned
 
 ```ruby
 client.mentions_timeline
