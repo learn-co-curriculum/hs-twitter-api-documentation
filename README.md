@@ -52,7 +52,7 @@ client = Twitter::REST::Client.new do |config|
   config.access_token        = ENV['access_token']
   config.access_token_secret = ENV['access_token_secret']
 end
-``
+```
 
 In the above code, we're setting up a variable `client`. This variable is storing a new instance of the `Client` class. This `client`, is our hook into Twitter.
 
