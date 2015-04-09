@@ -34,23 +34,14 @@ Once the page reloads, you'll find your access token and access secret by scroll
 
 ###Configuring code to get tweets
 
-First copy and paste your `consumer_key`, `consumer_secret`, `access_token`, and `access_token_secret` into the `.env` file in your project like so:
-
-``` ruby
-consumer_key=YOUR_CONSUMER_KEY
-consumer_secret_token=YOUR_CONSUMER_SECRET
-access_token=YOUR_ACCESS_TOKEN
-access_token_secret=YOUR_ACCESS_SECRET
-```
-
-Then initialize your Twitter client wherever you want to make calls to the Twitter API (probably from a route in your application controller) like this:
+Initialize your Twitter client wherever you want to make calls to the Twitter API (probably from a route in your application controller) like this:
 
 ```ruby
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = ENV['consumer_key']
-  config.consumer_secret     = ENV['consumer_secret_token']
-  config.access_token        = ENV['access_token']
-  config.access_token_secret = ENV['access_token_secret']
+  config.consumer_key        = <your consumer_key>
+  config.consumer_secret     = <your consumer_secret_token>
+  config.access_token        = <your access_token>
+  config.access_token_secret = <your access_token_secret>
 end
 ```
 
