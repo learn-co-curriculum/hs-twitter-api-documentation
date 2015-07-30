@@ -1,8 +1,4 @@
----
-tags: kids, twitter, api, gems
-languages: ruby
-type: walk-through, documentation
----
+
 
 ##You want to use data from Twitter!?
 
