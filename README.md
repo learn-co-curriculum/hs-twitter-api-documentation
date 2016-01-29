@@ -97,4 +97,4 @@ end
 
 
 
-<a href='https://learn.co/lessons/hs-twitter-api-documentation' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-twitter-api-documentation' title='You want to use data from Twitter!?'>You want to use data from Twitter!?</a> on Learn.co and start learning to code for free.</p>
